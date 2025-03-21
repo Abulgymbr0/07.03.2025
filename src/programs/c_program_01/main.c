@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 
   for (int32_t i = 0; i < 6; i++)
   {
-    printf("Please enter a for number %d: ", i + 1);
+    printf("Please enter a number for number %d: ", i + 1);
     scanf("%d", &user_array[i]);
   }
 
