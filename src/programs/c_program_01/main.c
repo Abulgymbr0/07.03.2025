@@ -18,8 +18,9 @@ int main(int argc, char **argv)
   {
     printf("Please enter a number for number %d: ", i + 1);
     scanf("%d", &user_array[i]);
+    
   }
-
+  
   for (int32_t i = 0; i < 6; i++)
   {
     for (int32_t j = 0; j < 6 - 1; j++)
@@ -73,5 +74,22 @@ int main(int argc, char **argv)
     }
   }
   printf("You got %d numbers right.\n", count);
+
+  if(count == 0) {
+    printf("Sorry you didn't won better Luck next time.\n");
+  } else if(count == 1){
+    printf("congrats you won 10$!\n");
+  } else if(count == 2) {
+    printf("congrats you won 200$!\n");
+  } else if(count == 3) {
+    printf("congrats you won 20.000$!\n");
+  } else if(count == 4) {
+    printf("congrats you won 120.000$!\n");
+  } else if(count == 5) {
+    printf("congrats you won 300.000$!\n");
+  } else if(count == 6) {
+    printf("Congrats you won 1.000.000§!!!!!!!!\n");
+    printf("You had a 0.0001 Prozent Chance to win this.\n");
+  }
   return 0;
 }
